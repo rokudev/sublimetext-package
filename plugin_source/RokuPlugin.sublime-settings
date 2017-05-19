@@ -1,0 +1,21 @@
+{
+    "rokuIp"            : "192.168.1.1",
+    "rokuDevUsername"   : "rokudev",
+    "rokuDevPass"       : "test",
+    "timeOut"           : 10,
+    "zipExclude" : [
+        "\\\\\\..*",
+        ".*\\.sh$",
+        ".*\\.mod$",
+        ".*\\.pkg$",
+        ".*\\.zip$",
+        ".*\\~$",
+        "\\\\Makefile",
+        "\\\\keys\\\\",
+        "\\\\libapi\\\\",
+        "\\\\libstub\\\\",
+        "\\\\storeassets\\\\",
+        "\\\\.*__MACOSX\\\\.*",
+        ".*\\.DS_Store$"
+    ]
+}

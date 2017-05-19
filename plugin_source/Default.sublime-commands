@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "RokuPlugin: deploy",
+        "command": "roku_deploy"
+    }
+]

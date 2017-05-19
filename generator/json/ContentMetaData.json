@@ -1,0 +1,549 @@
+{
+  "Rating Attribute Icons": {
+    "name": "Rating Attribute Icons",
+    "description": "The Rating attribute contains the MPAA or TV rating stored as a string. At runtime, the ratings are shown with an icon instead of rendering the string as text. The following table shows the list of valid values for the Rating attribute, and the resulting icon that will be displayed for each value.",
+    "attributes": []
+  },
+  "Track ID Attributes": {
+    "name": "Track ID Attributes",
+    "attributes": [
+      {
+        "name": "TrackIDAudio ",
+        "type": "String",
+        "values": "roVideoPlayer or roVideoScreen: Used in SmoothStreaming (StreamFormat \u003d \"ISM\") to specify Set the TrackIDAudio field to the desired track\u0027s StreamIndex.Name attribute from the manifest file.",
+        "example": "\"Spanish\""
+      },
+      {
+        "name": "AudioLanguageSelected",
+        "type": "String",
+        "values": "roVideoPlayer or roVideoScreen: An ISO-639 3-letter language code.  If multiple language tracks are available in the content, this specifies the one that should be used.",
+        "example": "\"eng\""
+      },
+      {
+        "name": "AudioFormat",
+        "type": "String",
+        "values": "roSpringboardScreen If set to \"dolby-digital\", will display a \"5.1 ))\" icon in the lower left of a movie style springboard screen.",
+        "example": "\"dolby-digital\""
+      },
+      {
+        "name": "TrackIDVideo",
+        "type": "String",
+        "values": "roVideoPlayer or roVideoScreen: Used in SmoothStreaming (StreamFormat \u003d \"ISM\") to specify Set the TrackIDVideo field to the desired track\u0027s StreamIndex.Name attribute from the manifest file.",
+        "example": "\"h264video\""
+      },
+      {
+        "name": "TrackIDSubtitle",
+        "type": "String",
+        "values": "roVideoPlayer Used to specify a closed caption track in a video stream that supports 608/708 captions.",
+        "example": "\"eia608/1\""
+      }
+    ]
+  },
+  "Descriptive Attributes": {
+    "name": "Descriptive Attributes",
+    "description": "Descriptive meta-data attributes can be used to describe the content item to the user, in a user interface element that allows the user to select the item.",
+    "attributes": [
+      {
+        "name": "Actors",
+        "type": "roArray",
+        "values": "List of Actor Names",
+        "example": "[ \"Brad Pitt\", \"Angelina Jolie\" ]"
+      },
+      {
+        "name": "EpisodeNumber",
+        "type": "String",
+        "values": "Episode Number",
+        "example": "\"1\""
+      },
+      {
+        "name": "Director",
+        "type": "String",
+        "values": "Individual Director Name",
+        "example": "\"Christopher Nolan\""
+      },
+      {
+        "name": "ShortDescriptionLine1",
+        "type": "String",
+        "values": "Line 1 of Poster Screen Description",
+        "example": "\"The Dark Knight\""
+      },
+      {
+        "name": "Description",
+        "type": "String",
+        "values": "Description of content",
+        "example": "\"Batman, Gordon and Harvey Dent are forced…\""
+      },
+      {
+        "name": "Categories",
+        "type": "String",
+        "values": "Individual Category/Genre Name",
+        "example": "\"Comedy\""
+      },
+      {
+        "name": "TextOverlayUL",
+        "type": "String",
+        "values": "roSlideShow displays this string in Upper Left corner of slide",
+        "example": "\"Joe\u0027s Photos\""
+      },
+      {
+        "name": "Categories",
+        "type": "roArray",
+        "values": "List of Category/Genre Names",
+        "example": "[ \"Comedy\", \"Drama\" ]"
+      },
+      {
+        "name": "TextOverlayBody",
+        "type": "String",
+        "values": "roSlideShow displays this string on the bottom part of slide",
+        "example": "\"Wanda\u0027s 40\u0027th Birthday\""
+      },
+      {
+        "name": "ShortDescriptionLine2",
+        "type": "String",
+        "values": "Line 2 of Poster Screen Description",
+        "example": "\"Rent $1.99, Buy $14.99\""
+      },
+      {
+        "name": "Artist",
+        "type": "String",
+        "values": "roSpringboard audio style uses to show artist",
+        "example": "\"U2\""
+      },
+      {
+        "name": "ReleaseDate",
+        "type": "String",
+        "values": "Formatted Date String",
+        "example": "\"3/31/2009\""
+      },
+      {
+        "name": "ContentType",
+        "type": "String",
+        "values": "Indicates content type: movie episode season series audio Attribute missing: NotSet",
+        "example": "\"movie\""
+      },
+      {
+        "name": "Album",
+        "type": "String",
+        "values": "roSpringboard audio style uses this to display the album",
+        "example": "\"Achtung\""
+      },
+      {
+        "name": "TextOverlayUR",
+        "type": "String",
+        "values": "roSlideShow displays this string in Upper Right corner of slide",
+        "example": "\"3 of 20\""
+      },
+      {
+        "name": "NumEpisodes",
+        "type": "Integer",
+        "values": "Number of episodes for a \"season\" or \"series\" contentType",
+        "example": "40"
+      },
+      {
+        "name": "TitleSeason",
+        "type": "String",
+        "values": "Season title for TV series",
+        "example": "\"Battlestar Galactica Season 5\""
+      },
+      {
+        "name": "Title",
+        "type": "String",
+        "values": "Content title: movie title for films, episode title for TV series",
+        "example": "\"The Dark Knight\""
+      },
+      {
+        "name": "SDPosterUrl",
+        "type": "String",
+        "values": "URL for SD content artwork",
+        "example": "http://www.myco.com/img/sd1932.jpg"
+      },
+      {
+        "name": "HDPosterUrl",
+        "type": "String",
+        "values": "URL for HD content artwork",
+        "example": "http://www.myco.com/img/hd1932.jpg"
+      },
+      {
+        "name": "Directors",
+        "type": "roArray",
+        "values": "List of Director Names",
+        "example": "[ \"Joel Coen\", \"Clint Eastwood\" ]"
+      },
+      {
+        "name": "UserStarRating",
+        "type": "Integer",
+        "values": "Specifies the user star rating to display as yellow star icon artwork, as a number from 1 to 100: 20 displays one star 40 displays two stars 60 displays three stars 80 displays four stars 100 displays five stars Does not display fractional stars for numbers not divisible by 20.",
+        "example": "80"
+      },
+      {
+        "name": "Rating",
+        "type": "String",
+        "values": "Selects an icon to be displayed for the corresponding MPAA or TV rating, that is, the value will display as an icon artwork. See Rating Attribute Icons for a list of the acceptable values and the corresponding icon.",
+        "example": "\"PG-13\""
+      },
+      {
+        "name": "Actors",
+        "type": "String",
+        "values": "Individual Actor Name",
+        "example": "\"Brad Pitt\""
+      },
+      {
+        "name": "StarRating",
+        "type": "Integer",
+        "values": "Specifies the star rating to display as red star icon artwork, as a number from 1 to 100: 20 displays one star 40 displays two stars 60 displays three stars 80 displays four stars 100 displays five stars Numbers not divisible by 20 are displayed as a fractional star. (A number of 30 will display one and a half stars.)",
+        "example": "80"
+      }
+    ]
+  },
+  "TextAttrs Attribute Keys": {
+    "name": "TextAttrs Attribute Keys",
+    "attributes": [
+      {
+        "name": "TextDirection",
+        "type": "String",
+        "values": "roImageCanvas (applies to text): \"LeftToRight\" or \"RightToLeft\" Default: \"LeftToRight\"",
+        "example": "\"RightToLeft\""
+      },
+      {
+        "name": "Font",
+        "type": "String",
+        "values": "roImageCanvas (applies to text): \"Small\",\"Medium\",\"Large\", or \"Huge\". Default: \"Medium\" Also can use any fonts registered by the roFontRegistry Object and returned by its Get() method",
+        "example": "\"Large\""
+      },
+      {
+        "name": "Color",
+        "type": "String",
+        "values": "roImageCanvas (applies to text and other colors): A color can be specified as an opaque color 24-bit RGB value (#RRGGBB) or as a color with alpha 32-bit ARGB value (#AARRGGBB). AA (alpha), RR (red), GG (green), and BB (blue) are 8-bit values specified as hexadecimal values 00..FF. When specified as a 32-bit color, the alpha channel bits in the color value range from 00\u003dtransparent to FF\u003dopaque. The alpha channel enables blending the background with the images. Default: \"#FFFFFF\" (opaque white)",
+        "example": "\"#FF0033FF\""
+      },
+      {
+        "name": "VAlign",
+        "type": "String",
+        "values": "roImageCanvas (applies to text): Controls the vertical alignment of the text in the TargetRect. Options are: \"Top\", \"VCenter\" / \"Center\" / \"Middle\", \"Bottom\" Default: \"VCenter\"",
+        "example": "\"Bottom\""
+      },
+      {
+        "name": "HAlign",
+        "type": "String",
+        "values": "roImageCanvas (applies to text): Controls the horizontal alignment of the text in the TargetRect. Options are: \"Left\", \"HCenter\" / \"Center\" /  \"Middle\", \"Right\", \"Justify\" Default: \"HCenter\"",
+        "example": "\"Right\""
+      }
+    ]
+  },
+  "Playback Control Attributes": {
+    "name": "Playback Control Attributes",
+    "description": "The playback control meta-data attributes are used to control the playback parameters for the content item.  ",
+    "attributes": [
+      {
+        "name": "MinBandwidth",
+        "type": "Integer",
+        "values": "roVideoPlayer or roVideoScreen: Will only select variant streams with a bandwidth higher than this minimum bandwidth. Units are kbps. By default Wowza servers set streams to 64 kbs, so you might want to set this parameter to something smaller than 64 when first testing Wowza streams. You will eventually want to specify the Wowza bitrates with a smil file (Please see the encoding guide.)",
+        "example": "48"
+      },
+      {
+        "name": "FullHD",
+        "type": "Boolean",
+        "values": "roVideoPlayer or roVideoScreen Specify that this stream was encoded at 1080p resolution.",
+        "example": "true"
+      },
+      {
+        "name": "MaxBandwidth",
+        "type": "Integer",
+        "values": "roVideoPlayer or roVideoScreen: Will only select variant streams with a bandwidth less than this maximum bandwidth. Units are kbps.",
+        "example": "2500"
+      },
+      {
+        "name": "AudioPIDPref",
+        "type": "Integer",
+        "values": "roVideoPlayer or roVideoScreen If the specified preferred PID audio stream exists, it will be chosen. Otherwise the last audio stream will be chosen.  This is valid only for HLS streams. This attribute is deprecated.  Use AudioLanguageSelected instead for channels running on 4.8 and later firmware.",
+        "example": "483"
+      },
+      {
+        "name": "FrameRate",
+        "type": "Integer",
+        "values": "roVideoPlayer or roVideoScreen Specify the 1080p stream was encoded at 24 or 30 fps.",
+        "example": "24"
+      }
+    ]
+  },
+  "roImageCanvas Attributes": {
+    "name": "roImageCanvas Attributes",
+    "attributes": [
+      {
+        "name": "TargetRect",
+        "type": "Associative Array: { x: Integer y: Integer w: Integer h: Integer }",
+        "values": "roImageCanvas: The rectangle where the text/or image should be drawn. The default is the entire image at the origin. Can also be used with roFontMetrics to provide a target rect for the desired font size. Note the values must be of type Integer.  Other numeric types such as Float will be ignored and treated as 0. Note that BrightScript returns a Float by default when doing division. You can convert calculated values to integer values using the Int() or Fix() functions, for example, if needed.",
+        "example": "{ x : 400, y : 200, w : 200, h : 200 }"
+      },
+      {
+        "name": "TextAttrs",
+        "type": "Associative Array",
+        "values": "See TextAttrs Attribute Keys for descriptions of the array keys.",
+        "example": "{ Color : \"#FFCCCCCC\",  Font : \"Medium\",  HAlign : \"HCenter\",  VAlign : \"VCenter\", Direction : \"LeftToRight\" }"
+      },
+      {
+        "name": "SourceRect",
+        "type": "Associative Array: { x: Integer y: Integer w: Integer h: Integer }",
+        "values": "roImageCanvas: The rectangle from the image that should be drawn. The default is the entire image at the origin. Note the values must be of type Integer.  Other numeric types such as Float will be ignored and treated as 0. Note that BrightScript returns a Float by default when doing division. You can convert calculated values to integer values using the Int() or Fix() functions, for example, if needed.",
+        "example": "{ x : 100, y : 100, w : 200, h : 200 }"
+      },
+      {
+        "name": "CompositionMode",
+        "type": "String",
+        "values": "roImageCanvas: Either \"Source\" (where source pixels completely replace destination pixels) or \"Source_Over\" (where source pixels are alpha blended with destination pixels).",
+        "example": "\"Source_Over\""
+      },
+      {
+        "name": "TargetTranslation",
+        "type": "Associative Array: { x: Integer y: Integer }",
+        "values": "roImageCanvas: The amount to translate the coordinate system prior to drawing the image and/or text. Translation is done before rotation. Default: {0, 0} Note the values must be of type Integer.  Other numeric types such as Float will be ignored and treated as 0. Note that BrightScript returns a Float by default when doing division. You can convert calculated values to integer values using the Int() or Fix() functions, for example, if needed.",
+        "example": "{ x : 100, y : 100 }"
+      },
+      {
+        "name": "TargetRotation",
+        "type": "Float",
+        "values": "roImageCanvas: The angle (in degrees) to rotate the coordinate system prior to drawing the image and/or text. Default: 0",
+        "example": "90.0"
+      },
+      {
+        "name": "Text",
+        "type": "String",
+        "values": "roImageCanvas: The text is drawn into the TargetRect.",
+        "example": "\"Hello ImageCanvas\""
+      }
+    ]
+  },
+  "Scene Graph Certificate Attributes": {
+    "name": "Scene Graph Certificate Attributes",
+    "description": "The Scene Graph certificate meta-data attributes are used to configure the use of HTTP certificates and cookies by the Audio and Video nodes.  Please note that when setting any of the following four attributes on a Video or Audio node, you need to be careful that the values are set on the correct HTTPAgent.  If the node does not have its own HTTPAgent, set by explicitly calling setHttpAgent() on the node, the Roku OS will traverse up the scene graph hierarchy until it finds the first node in the Video or Audio node\u0027s ancestry that has set an HTTPAgent.  If none is found, the values will be set on the global HTTPAgent which is always guaranteed to exist.  Therefore if you expect the header, etc. values set to only apply to your Audio and Video nodes, create a unique instance of roHttpAgent for them and assign it directly.  For example, for a Video node you should do the following:",
+    "attributes": [
+      {
+        "name": "HttpCookies",
+        "type": "array of strings",
+        "values": "If set, the Scene Graph Audio or Video node send the cookies to the server. Each cookie must have the following syntax: dom\u003ddomain;path\u003dpath;name\u003dname;val\u003dvalue; When used with a Scene Graph Audio or Video node, the node or global HttpAgent is found, as explained elsewhere in this documentation. When this Content Meta-Data is played and this attribute is set, all HTTP cookies in the agent are cleared and replaced with the cookies defined by this attribute.",
+        "example": " "
+      },
+      {
+        "name": "HttpHeaders",
+        "type": "array of strings",
+        "values": "If set, the Scene Graph Audio or Video node sends these headers to the server. Each string must be of the format \"name:value\" When used with a Scene Graph Audio or Video node, the node or global HttpAgent is found, as explained elsewhere in this documentation. When this Content Meta-Data is played and this attribute is set, all HTTP headers in the agent are cleared and replaced with the headers defined by this attribute.",
+        "example": " "
+      },
+      {
+        "name": "HttpCertificatesFile",
+        "type": "uri",
+        "values": "If set, the Scene Graph Audio or Video node loads this public certificate bundle, to authenticate the server. The protocol must be https for this to have any effect. When used with a Scene Graph Audio or Video node, the node or global HttpAgent is found, as explained elsewhere in this documentation. When playing this content, the agent is updated in the following manner: If this attribute is defined, the file URI is set into the HttpAgent instance. However, if this attribute is specified and the value is the empty string (\"\"), then no changes will be made to the HttpAgent. If this attribute is not defined, the behavior depends upon whether the Content Meta-Data (CMD) contains secure (https) URLs: If no secure URLs exist in the meta-data, then no certificates file path is set into the agent. If a secure URL does exist, the platform\u0027s default certificates are set into the agent.",
+        "example": " "
+      },
+      {
+        "name": "HttpSendClientCertificate",
+        "type": "Boolean",
+        "values": "If true, the Scene Graph Audio or Video node sends the client device certificate to the server, for client authentication. The protocol must be https for this to have any effect. When used with a Scene Graph Audio or Video node, the node or global HttpAgent is found, as explained elsewhere in this documentation. When this Content Meta-Data is played and this attribute exists, the value of this attribute (true or false) is set into the HttpAgent.",
+        "example": " "
+      }
+    ]
+  },
+  "Playback Configuration Attributes": {
+    "name": "Playback Configuration Attributes",
+    "description": "Playback configuration meta-data attributes are used to configure the playback of the content item.",
+    "attributes": [
+      {
+        "name": "Length",
+        "type": "Integer",
+        "values": "Movie Length in Seconds Length zero displays at 0m, Length not set will not display.",
+        "example": "3600 (one hour)"
+      },
+      {
+        "name": "PlayStart",
+        "type": "Integer",
+        "values": "Optional Playback Start Offset in Seconds. If specified, video playback will begin at this location unless BookmarkPosition is defined, which takes precedence.",
+        "example": "10"
+      },
+      {
+        "name": "StreamContentIDs",
+        "type": "roArray",
+        "values": "Array of String values logged in Roku logs to identify stream and bitrate played.",
+        "example": "[ \"myco-19321-384.mp4\", \"myco-19321-500.mp4\", \"myco-19321-1000.mp4\", \"myco-19321-1500.mp4\" ]"
+      },
+      {
+        "name": "SubtitleTracks",
+        "type": "roArray of roAssociativeArray: [{ Language: String Description: String TrackName: String },...]",
+        "values": "SubtitleTracks sets the list of available caption tracks available to the stream. This list is added to the track list in the closed caption configuration dialog that is displayed during video playback when the user presses the Roku remote control * button. The captions from the selected track are then displayed on the screen. Language specifies the ISO 639.2B 3 character language code. This string is used to match the proper caption track with the audio language. Description specifies the text that will be shown for the corresponding track in the closed caption configuration dialog. TrackName sets the name of the caption track to render. This string is a concatenation of the track source and track id, separated by a \"/\". Valid track sources are: \"ism\", \"mkv\", and \"eia608\". The track id must match the track identifier in the smooth or mkv manifest. For example if an mkv file has a caption track called “english1” the TrackName to select this track is “mkv/english1”. For side loaded caption tracks the TrackName is the url from where the caption track can be downloaded. Side loaded caption formats can include srt, ttml, and dfxp. The SubtitleTracks metadata is generally only used for side loaded captions. The Roku firmware detects in-stream captions and thus specifying SubtitleTracks in this case is not necessary.",
+        "example": " "
+      },
+      {
+        "name": "Streams",
+        "type": "roArray of roAssociativeArrays: [ { url: String bitrate: Integer quality: Boolean contentid: String stickyredirects: Boolean }, … ]",
+        "values": "Used by roVideoPlayer and roVideoScreen to specify the content metadata for a set of fixed bitrate streams. Each array item specifies the URL, bitrate, etc. for one stream variant. Please note that setting stream content metadata using the Streams value is recommended for non-adaptive video (such as MP4 progressive download) only. For adaptive streaming, use the Stream metadata value.",
+        "example": "[  {  url : \"http://me.com/x-384.mp4\", bitrate : 384 quality : false contented : \"x-384\" }, { url : \"http://me.com/x-2500.mp4\", bitrate : 2500 quality : true contented : \"x-1500\" } ]"
+      },
+      {
+        "name": "SDBifUrl",
+        "type": "String",
+        "values": "BIF URL for SD trick mode",
+        "example": "http://www.myco.com/bif/sd1932.bif"
+      },
+      {
+        "name": "StreamQualities",
+        "type": "roArray",
+        "values": "Array of Strings quality indicators identifying a stream as \"SD\" or \"HD\"",
+        "example": "[ \"SD\", \"SD\", \"SD\", \"HD\" ]"
+      },
+      {
+        "name": "HDBranded",
+        "type": "Boolean",
+        "values": "Boolean indicating if HD branding should be displayed",
+        "example": "True"
+      },
+      {
+        "name": "FHDBifUrl",
+        "type": "String",
+        "values": "BIF URL for FHD trick mode",
+        "example": "http://www.myco.com/bif/fhd1932.bif"
+      },
+      {
+        "name": "IsHD",
+        "type": "Boolean",
+        "values": "Boolean indicating if content is HD",
+        "example": "True"
+      },
+      {
+        "name": "HDBifUrl",
+        "type": "String",
+        "values": "BIF URL for HD trick mode",
+        "example": "http://www.myco.com/bif/hd1932.bif"
+      },
+      {
+        "name": "SubtitleUrl",
+        "type": "String",
+        "values": "Specifies the path to an SRT or TTML formatted file used to render subtitles or closed captions, respectively. This is supported on roVideoScreen only.  See Closed Caption Support for additional details.",
+        "example": "\"http:// www.myco.com/vid/1932.srt\" \"http://www.myco.com/vid/1932.xml\""
+      },
+      {
+        "name": "ClosedCaptions",
+        "type": "Boolean",
+        "values": "Boolean indicating if CC icon should be displayed.",
+        "example": "True"
+      },
+      {
+        "name": "StreamUrls",
+        "type": "roArray",
+        "values": "Array of URL\u0027s for content streams. Please note that setting stream urls using this value is recommended for non-adaptive video (such as MP4 progressive download) only.",
+        "example": "[ \"http://www.myco.com/vid/1932-1.mp4\", \"http://www.myco.com/vid/1932-2.mp4\", \"http://www.myco.com/vid/1932-3.mp4\", \"http://www.myco.com/vid/1932-4.mp4\" ]"
+      },
+      {
+        "name": "Stream",
+        "type": "roAssociativeArray: { url:  String  bitrate: Integer quality: Boolean contentid: String stickyredirects: Boolean }",
+        "values": "roVideoPlayer and roVideoScreen: roAssociativeArray that has parameters representing the stream settings that were set as individual roArrays in previous firmware revisions. The old method is still supported and descriptions of the parameters can be found under those content-meta data entries. For url please see StreamUrls, for quality it is now a Boolean that is true for HD quality.",
+        "example": "{  url : \"http://me.com/big.m3u8\",  quality : true  contented : \"big-hls\" }"
+      },
+      {
+        "name": "PlayDuration",
+        "type": "Integer",
+        "values": "Optional Playback Max Duration in Seconds",
+        "example": "120 (two minute preview)"
+      },
+      {
+        "name": "BookmarkPosition",
+        "type": "Integer",
+        "values": "Last Play Position Bookmark in Seconds. If specified, video playback will begin at this location. This value takes precedence over the PlayStart value.",
+        "example": "1950 (32 minutes, 30 seconds)"
+      },
+      {
+        "name": "EncodingType",
+        "type": "String",
+        "values": "Specifies the encoding scheme for PlayReady DRM, by setting to one of the following values: PlayReadyLicenseAcquisitionUrl If specified, the EncodingKey attribute contains the PlayReady license acquisition URL PlayReadyLicenseAcquisitionAndChallenge If specified, the EncodingKey attribute contains the PlayReady license acquisition URL plus additional custom request data",
+        "example": " "
+      },
+      {
+        "name": "StreamFormat",
+        "type": "String",
+        "values": "Type of content Default: H.264/AAC in .mp4 Container Valid values: mp4, wma, mp3 Note: mp4 will also accept .mov and .m4v files. \"hls\" \"ism\" (smooth streaming) \"dash\" (MPEG-DASH) \"mkv\", \"mka\",\"mks\" Deprecated Since Firmware version 4.1: \"wmv\"",
+        "example": " "
+      },
+      {
+        "name": "SubtitleConfig",
+        "type": "roAssociativeArray: { TrackName: String }",
+        "values": "Specifies the caption settings for content playback. TrackName sets the name of the caption track to render. This string is a concatenation of the track source and track id, separated by a \"/\". Valid track sources are: \"ism\", \"mkv\", \"eia608\" and \"dvb\".The track id must match the track identifier in the smooth or mkv manifest. For example if an mkv file has a caption track called “english1” the TrackName to select this track is “mkv/english1”. When the track source is \"dvb\", the track id is the three-letter language code, with \"_sdh\" appended for subtitles for the deaf and hard of hearing. For example, \"dvb/eng_sdh\" are English subtitles for the deaf and hard of hearing and \"dvb/nor\" are normal Norwegian subtitles. For side loaded caption tracks the TrackName is the url from where the caption track can be downloaded. Side loaded caption formats can include srt, ttml, and dfxp. The SubtitleConfig content metadata attribute was added to the Roku platform with the 5.4 firmware for the Roku Streaming Stick HDMI Version. Note that this setting is used to specify the default closed caption track to render. If a piece of video content support multiple side loaded (not in stream) caption tracks, they all also need to be defined in SubtitleTracks.",
+        "example": "{ TrackName :  \"mkv/english1\" }  "
+      },
+      {
+        "name": "StreamBitrates",
+        "type": "roArray",
+        "values": "Array of bitrates in kbps for content streams used. Please note that setting stream bitrates using this value is recommended for non-adaptive video (such as MP4 progressive download) only.",
+        "example": "[ 384, 500, 1000, 1500 ]"
+      },
+      {
+        "name": "Url",
+        "type": "String",
+        "values": "Image URL for roSlideShow or roImageCanvas, stream URL for Scene Graph Video node",
+        "example": "http://www.myco.com/img/vacation.jpg"
+      },
+      {
+        "name": "Watched",
+        "type": "Boolean",
+        "values": "Flag indicating if content has been watched",
+        "example": "True"
+      },
+      {
+        "name": "StreamStartTimeOffset",
+        "type": "Integer",
+        "values": "Optional. Default is 0. The offset into the stream which is considered the beginning of playback. Time in seconds.",
+        "example": "3600 (one hour)"
+      },
+      {
+        "name": "Live",
+        "type": "Boolean",
+        "values": "Optional flag indicating video is live. Replaces time remaining in progress bar to display \"Live\". Default is false.",
+        "example": "True"
+      },
+      {
+        "name": "StreamStickyHttpRedirects",
+        "type": "roArray",
+        "values": "Array of Boolean values indicating if the HTTP endpoint should be sticky and not subject to change on subsequent requests. Default is false.",
+        "example": "[ false, false, false, false ]"
+      },
+      {
+        "name": "SubtitleColor",
+        "type": "String",
+        "values": "Theme metadata attribute that specifies the color to use when rendering subtitle text",
+        "example": "\"#FF0000\""
+      },
+      {
+        "name": "EncodingKey",
+        "type": "String",
+        "values": "Specifies the PlayReady license acquisition URL, and additional custom request data, determined by the EncodingType attribute value specified: PlayReadyLicenseAcquisitionUrl The EncodingKey attribute contains the PlayReady license acquisition URL PlayReadyLicenseAcquisitionAndChallenge The EncodingKey attribute contains the PlayReady license acquisition URL. It also contains additional custom license acquisition URL request data. In this case the EncodingKey string uses the format \"URL%%%\u003ccustomdata\u003e. For example: EncodingKey \u003d  \"http://ipaddress/mylicense%%%data\"",
+        "example": " "
+      },
+      {
+        "name": "VideoDisableUI",
+        "type": "Boolean",
+        "values": "If set to true, hides the Scene Graph Video node trick play UI If set to false (the default) shows the Scene Graph Video node trick play UI",
+        "example": "video \u003d createObject(\"roSGNode\", \"Video\") video.content.VideoDisableUI \u003d true"
+      },
+      {
+        "name": "SwitchingStrategy",
+        "type": "String",
+        "values": "roVideoPlayer or roVideoScreen: Specify different stream switching algorithms to be used in HLS adaptive streaming. Only has an effect on HLS streams. Default is \"full-adaptation\".   Possible strategy values: \"unaligned-segments\" This strategy does not require segments to align across variants. Also does not switch as often as full-adaptation. \"full-adaptation\" Uses measured bandwidth and buffer fullness to determine when to switch. This strategy requires that segments align across variants as the HLS spec requires. This is the new default. \"minimum-adaptation\" Uses only measured bandwidth in determining switching strategy. This strategy requires that segments align across variants as the HLS spec requires. \"no-adaptation\" Only switches bitrates on a rebuffer.",
+        "example": "\"full-adaptation\""
+      }
+    ]
+  },
+  "roListScreen Attributes": {
+    "name": "roListScreen Attributes",
+    "attributes": [
+      {
+        "name": "SDBackgroundImageUrl",
+        "type": "String",
+        "values": "roListScreen: URL for the SD background image",
+        "example": "http://www.myco.com/images/bg1_sd.jpg"
+      },
+      {
+        "name": "HDBackgroundImageUrl",
+        "type": "String",
+        "values": "roListScreen: URL for the HD background image",
+        "example": "http://www.myco.com/images/bg1_hd.jpg"
+      }
+    ]
+  }
+}

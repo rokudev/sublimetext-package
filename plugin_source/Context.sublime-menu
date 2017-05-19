@@ -1,0 +1,21 @@
+[
+    {
+        "caption": "-",
+        "id": "separator"
+    },
+    {
+        "caption": "RokuPlugin",
+        "id": "rokuplugin",
+        "children":
+        [
+            {
+                "command": "roku_deploy",
+                "caption": "Deploy"
+            }
+        ]
+    },
+	{
+        "caption": "-",
+        "id": "separator"
+    }
+]
