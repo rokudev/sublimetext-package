@@ -10,9 +10,9 @@ I. Editor Installation:
     2. Install Sublime Text 3.
 
 ------------------------
-II. Plugin Instalation:
+II. Package Instalation:
 ------------------------
-    1. Get the plugin: RokuPlugin.sublime-package
+    1. Get the package: RokuPlugin.sublime-package
     2. Launch SublimeText3 and go to menu "Preferences" -> "Browse Packages..."
     3. Put RokuPlugin.sublime-package file to this directory.
     3.1. If not working, put file to "Installed Packages" directory (at the same level as "Packages")
@@ -47,4 +47,14 @@ IV. Configuration:
                 "rokuDevUsername"   : "rokudev",
                 "rokuDevPass"       : "test",
             }
+
+------------------------
+V. Additional Packages:
+------------------------
+1. Autocomplete+ provider for XML via XSD: [download exalt](https://packagecontrol.io/packages/Exalt)
+
+ >The XSD file follows the W3C standard. The XML file to autocomplete ask for validation.
+ > That is, the root element must looks like: 
+ 
+ ```<component name="SomeComponentName..." xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" extends="Scene" xsi:noNamespaceSchemaLocation="http://rokudev.roku.com/rokudev/schema/RokuSceneGraph.xsd">```
 
