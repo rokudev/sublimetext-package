@@ -1,6 +1,6 @@
 MIT License
 
-The Atom Plugin and associated documentation files (the “Software”) are Copyright (c) 2017 Roku, Inc.
+The Sublime Package and associated documentation files (the “Software”) are Copyright (c) 2017 Roku, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
