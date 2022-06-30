@@ -1,4 +1,4 @@
-# sublimetext-package (decommissioned)
+# sublimetext-package ⚠️ decommissioned ⚠️
 The package for Sublime Text Editor
 
  - [Instructions](../master/documentation/README.md)
